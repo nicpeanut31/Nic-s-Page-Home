@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently Asked Questions">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="register_styless.css">
+    <style>
+        body {
+            background-image: url('background company.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="Central Standard.jpg" alt="Company Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html" class="homepage">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="home_product.html" class="product">Product</a></li>
+                <li><a href="branch.html" class="branches">Branches</a></li>
+                <li><a href="faq.HTML" class="faqs">FAQ's</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="login-link">Login</a>
+        <h1>Registration Form</h1>
+    </header>
+    <main>
+        <form id="registrationForm">
+            <h2>Personal Information</h2>
+            <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="middleName">Middle Name</label>
+                <input type="text" id="middleName" name="middleName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+                    <label><input type="radio" name="gender" value="female" required> Bisexual</label>
+                    <label><input type="radio" name="gender" value="female" required> Transgender</label>
+                    <label><input type="radio" name="gender" value="preferNotToSay" required> Prefer Not to Say</label>
+                </div>
+            </div>
+
+            <h2>Contact Information</h2>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mobileNumber">Mobile Number</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="altContactNumber">Alternate Contact Number</label>
+                <input type="tel" id="altContactNumber" name="altContactNumber">
+            </div>
+
+            <h2>Address Information</h2>
+            <div class="form-group">
+                <label for="streetAddress">Street Address</label>
+                <textarea id="streetAddress" name="streetAddress" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State/Province</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+            <div class="form-group">
+                <label for="postalCode">Postal Code</label>
+                <input type="text" id="postalCode" name="postalCode" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="">Philippines</option>
+                    <option value="">United State</option>
+                    <option value="">South korea</option>
+                    <!-- Add country options here -->
+                </select>
+            </div>
+
+            <h2>Account Security</h2>
+            <div class="form-group">
+                <label for="username">Username *</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password *</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password *</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+
+            <h2>Profile Photo</h2>
+            <div class="form-group profile-pic">
+                <img id="profilePicPreview" src="#" alt="Profile Picture Preview" style="display: none;">
+                <input type="file" id="profilePic" name="profilePic" accept="image/*">
+            </div>
+
+            </div>
+
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </main>
+</body>
+</html>

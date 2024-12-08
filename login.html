@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently Asked Questions">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login_styless1.css">
+    <style>
+        body {
+            background-image: url('background company.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .remember-me {
+            display: flex;
+            align-items: center;
+        }
+        .register-link {
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            background-color: #080a0c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .register-link:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="Central Standard.jpg" alt="Company Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html" class="homepage">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="home_product.html" class="product">Product</a></li>
+                <li><a href="branch.html" class="branches">Branches</a></li>
+                <li><a href="faq.HTML" class="faqs">FAQ's</a></li>
+            </ul>
+        </nav>
+        <h1>Login Form</h1>
+        <a href="register.html" class="register-link">Register</a>
+    </header>
+    <div class="login-container">
+        <h2>User's Login</h2>
+        <form action="login" method="get">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <label class="remember-me">
+                <input type="checkbox" name="remember">
+                Remember Me
+            </label>
+            <div class="forgot-password">
+                <a href="#forgot-password">Forgot Password?</a>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
